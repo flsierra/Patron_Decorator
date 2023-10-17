@@ -1,4 +1,4 @@
-public class CafeDecorator implements  ICafe {
+public abstract class CafeDecorator implements  ICafe {
     protected ICafe cafe;
 
     public CafeDecorator(ICafe cafe) {
