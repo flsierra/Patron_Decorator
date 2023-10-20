@@ -10,6 +10,9 @@ public class Main {
         // Café con Azúcar
         ICafe cafeconAzucar = new AzucarDecorator(new CafeSimple());
         System.out.println("El costo del café con Azúcar es: $"+cafeconAzucar.cost());
+        // Café con Crema
+        ICafe cafeconcrema = new Crema(new CafeSimple());
+        System.out.println("EL costo del café con Crema es: $"+cafeconcrema.cost());
         // Café con leche y azúcar
         ICafe cafeconLecheyAzucar = new LecheDecorator(new AzucarDecorator(new CafeSimple()));
         System.out.println("El costo del café con leche y azúcar es: $"+cafeconLecheyAzucar.cost());

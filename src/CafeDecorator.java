@@ -7,6 +7,6 @@ public abstract class CafeDecorator implements  ICafe {
 
     @Override
     public double cost() {
-        return cafe.cost();
+        return cafe.cost() ;
     }
 }
